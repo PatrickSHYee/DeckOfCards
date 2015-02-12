@@ -10,7 +10,6 @@ namespace DeckOfCards
     [TestFixture]
     class Test
     {
-        
         [Test]
         public void ConstructorTest()
         {
@@ -18,7 +17,6 @@ namespace DeckOfCards
             Assert.IsTrue(deck.DeckOfCards.Distinct().Count() == 52, "Deck does not have 52 unique cards");
         }
 
-        
         [Test]
         public void DealTest()
         {
@@ -27,7 +25,6 @@ namespace DeckOfCards
             Assert.IsTrue(deck.DeckOfCards.Count == 47, "DeckOfCards should have 47 cards after dealing 5");
         }
 
-        
         [Test]
         public void DiscardTest()
         {
